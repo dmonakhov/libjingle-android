@@ -1,0 +1,13 @@
+This is superproject git for libjingle build on android
+
+# Fetch repo
+# Important do not forget to initialize submodules
+git clone git://github.com/dmonakhov/libjingle-android.git --recursive
+# Build ndk
+cd libjingle-android
+cd jni
+ndk-build -j8
+
+Build options:
+BUILD_UNITTEST: Compile with unittests, disabled by defaults
+
