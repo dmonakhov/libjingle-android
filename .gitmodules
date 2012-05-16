@@ -1,0 +1,20 @@
+[submodule "submodules/externals/openssl"]
+	path = submodules/externals/openssl
+	url = git://git.linphone.org/android-openssl.git
+	ignore = untracked
+[submodule "submodules/externals/srtp"]
+	path = submodules/externals/srtp
+	url = git://git.linphone.org/srtp.git
+	ignore = untracked
+[submodule "submodules/externals/libjingle"]
+	path = submodules/externals/libjingle
+	url = git://github.com/dmonakhov/libjingle.git
+	ignore = untracked
+[submodule "submodules/externals/gtest"]
+	path = submodules/externals/gtest
+	url = git://github.com/dmonakhov/googletest.git
+	ignore = untracked
+[submodule "submodules/externals/expat"]
+	path = submodules/externals/expat
+	url = https://android.googlesource.com/platform/external/expat
+	ignore = untracked
