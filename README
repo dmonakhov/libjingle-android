@@ -1,3 +1,35 @@
+########### IMPORTANT ##########################
+This project is obsoleted because of two reasons
+################################################
+1) There is an easy and generic way to build libjingle for android via GYP
+   tools (see at the bottom of the page). But even if you know how to build
+   binaries,  you still have to write jni-wrapper for java in order to
+   create full featured android application. 
+
+2) There is another project https://github.com/lukeweber/webrtc-jingle-client
+   This project contains:
+   A) native libjingle build script (build libjingle which use webrtcVoiceEngine)
+   B) Extensible jni-api for libjingle
+   C) Example application
+   And all this stuff just works. Also Luke does good job, and regulary updates
+   the project.  So I've switched to that project, and suggest you do the same
+   and help us to make this project better.
+
+
+BUILD LIBJINGLE VIA GYP TOOLS:
+Install depot_tools from here: http://dev.chromium.org/developers/how-tos/depottools
+# mkdir libjingle
+# cd libjingle 
+# gclient config http://git.chromium.org/external/libjingle.git --name trunk
+# gclient sync
+
+# cd trunk
+# export CHROME_SRC=`pwd`
+# source build/android/envsetup.sh
+# gclient runhooks
+# make -j8
+
+
 This is superproject git for libjingle build on android
 
 # Fetch repo
